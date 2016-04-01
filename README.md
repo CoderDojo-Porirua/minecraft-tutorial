@@ -9,6 +9,9 @@ Folder paths below are arbitrary, but if you use the defaults, it will mean the 
 
 Some of the downloads below depend on whether you're running 32 or 64 bit Windows - to find out which you're using, go to http://windows.microsoft.com/en-NZ/windows7/find-out-32-or-64-bit.
 ## What do we need to download?
+
+*A copy of all the downloaded files can also be downloaded at https://mega.nz/#F!7h8jGKyQ!mhnwCgWJjzuY-bvKGCng0Q.*
+
 ### 7-Zip (portable edition)
 - Browse to http://portableapps.com/apps/utilities/7-zip_portable
 - Download, and run **7-ZipPortable_15.14.paf.exe**, which will extract into a folder. Accept the default (````C:\Users\<username>\Downloads\7-ZipPortable````)
