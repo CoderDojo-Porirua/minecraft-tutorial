@@ -61,17 +61,102 @@ javac 1.8.0_77
 
 
 ### Start Eclipse
+- Browse to **EclipsePortable** folder, and start **EclipsePortable.exe**.
+- When asked to choose a workspace, browse to eclipse folder in MDK download folder, e.g. ````C:\Users\<username>\Downloads\forge\eclipse````
 
-- Browse to EclipsePortable folder, and start **EclipsePortable.exe**.
-
-
-
-### Mine
+## Sources
+- Tutorial video: https://www.youtube.com/watch?v=VhOSL7rGb10
+- http://www.minecraftforge.net/wiki/Installation/Source
+- http://mcforge.readthedocs.org/en/latest/gettingstarted/
 
 ## Troubleshooting
-### Unpacking issues
+### JDK Unpacking issues
 If you see the following issue whilst unpacking the jdk, check the version of the jdk you downloaded matches your operating system.
 
 ````
 This version of C:\Users\coderdojo\Downloads\jdk\jre\bin\unpack200.exe is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher.
 ````
+
+### Memory issues
+
+````
+GC overhead limit exceeded
+Execution failed for task ':decompileMc'.
+> GC overhead limit exceeded
+
+C:\Users\Administrator\Desktop\Minecraft>gradlew setupDecompWorkspace --refresh-
+dependencies
+This mapping 'stable_20' was designed for MC 1.8.8! Use at your own peril.
+#################################################
+         ForgeGradle 2.1-SNAPSHOT-9e8f067
+  https://github.com/MinecraftForge/ForgeGradle
+#################################################
+               Powered by MCP unknown
+             http://modcoderpack.com
+         by: Searge, ProfMobius, Fesh0r,
+         R4wk, ZeuX, IngisKahn, bspkrs
+#################################################
+:deobfCompileDummyTask
+:deobfProvidedDummyTask
+:getVersionJson
+:extractUserdev UP-TO-DATE
+:extractDependencyATs SKIPPED
+:extractMcpData SKIPPED
+:extractMcpMappings SKIPPED
+:genSrgs SKIPPED
+:downloadClient SKIPPED
+:downloadServer SKIPPED
+:splitServerJar SKIPPED
+:mergeJars SKIPPED
+:deobfMcSRG SKIPPED
+:decompileMc FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':decompileMc'.
+> GC overhead limit exceeded
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug
+option to get more log output.
+
+BUILD FAILED
+
+Total time: 4 mins 53.467 secs
+
+C:\Users\Administrator\Desktop\Minecraft>
+````
+
+
+### Java heap space issue
+
+````
+Applying SpecialSource...
+Applying Exceptor...
+:decompileMc FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':decompileMc'.
+> Java heap space
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 3 mins 53.98 secs
+````
+- Add ````org.gradle.jvmargs=-Xmx2G```` to **c:\users\<Username>\.gradle\gradle.properties** (create the file if it doesn't exist) to allocate more RAM to Gradle.
+  - Alternatives if not enough memory:
+  - ````org.gradle.jvmargs=-Xmx1500M````
+
+### Eclipse run/debug error
+
+````
+Launching Client has encountered a problem.
+Variable references empty selection: ${project_loc}
+````
+- Make sure you’ve got the project selected in the Package Explorer pane on the left.
