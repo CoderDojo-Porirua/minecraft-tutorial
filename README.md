@@ -3,7 +3,7 @@ A Minecraft modding tutorial for use on a locked down Windows machine.
 
 We're going to try and set up a development environment on a locked down Windows machine. This tutorial has been tested on Windows 10, but should work on earlier versions too.
 
-We're using *portable versions* of the Java Development Kit and Eclipse so that we can work on machines without needing administrative access, or installing anything on to the computer.
+We're using *portable versions* of the Java Development Kit and Eclipse so that we can work on machines without needing administrative access, or installing anything on to the computer, for example in a school environment.
 
 Folder paths below are arbitrary, but if you use the defaults, it will mean the steps are easier to follow.
 
@@ -34,29 +34,37 @@ Folder paths below are arbitrary, but if you use the defaults, it will mean the 
 
 ````
 C:\Users\coderdojo\Downloads\jdk>for /r %x in (*.pack) do .\bin\unpack200 -r "%x" "%~dx%~px%~nx.jar
-
 C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\charsets.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\charsets.jar
-
 C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\deploy.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\deploy.jar
-
-C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\javaws.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\javaws.jar
-
-C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\jsse.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\jsse.jar
-
-C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\plugin.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\plugin.jar
-
-C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\rt.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\rt.jar
-
-C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\ext\jfxrt.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\ext\jfxrt.jar
-
-C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\ext\localedata.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\ext\localedata.jar
-
+...
+...
 C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\lib\tools.pack" "C:\Users\coderdojo\Downloads\jdk\lib\tools.jar
-
 C:\Users\coderdojo\Downloads\jdk>bin\javac -version
 javac 1.8.0_77
 
 ````
+
+### Eclipse Classic Version 4.4 Portable Edition
+- Browse to https://sourceforge.net/projects/eclipseportable/ and Download **EclipsePortable_4.4_Classic_Edition.paf.exe**
+- Run the file, and extract into a folder. Accept the default (````C:\Users\<username>\Downloads\EclipsePortable````)
+- Copy all files and folders from the **Downloads\jdk** folder to the **Downloads\EclipsePortable\App\Java**
+
+### Minecraftforge
+- Browse to http://files.minecraftforge.net/ and download the **Recommended MDK** file.
+- Unzip the downloaded ````forge-1.8.9-11.15.1.1722-mdk.zip```` file to ````C:\Users\<username>\Downloads\forge````.
+- In Windows Explorer, navigate to the new ````Downloads\forge```` directory, and again, hold down **Shift**, and **right click**, then select "Open command window here".
+- Type the following:
+  - ````PATH="%PATH%";"%USERPROFILE%\Downloads\EclipsePortable\App\Java\bin"````
+  - ````gradlew setupDecompWorkspace --refresh-dependencies````
+    - Might take 5-15 minutes
+  - ````gradlew eclipse````
+
+
+### Start Eclipse
+
+- Browse to EclipsePortable folder, and start **EclipsePortable.exe**.
+
+
 
 ### Mine
 
