@@ -7,6 +7,7 @@ We're using *portable versions* of the Java Development Kit and Eclipse so that 
 
 Folder paths below are arbitrary, but if you use the defaults, it will mean the steps are easier to follow.
 
+Some of the downloads below depend on whether you're running 32 or 64 bit Windows - to find out which you're using, go to http://windows.microsoft.com/en-NZ/windows7/find-out-32-or-64-bit.
 ## What do we need to download?
 ### 7-Zip (portable edition)
 - Browse to http://portableapps.com/apps/utilities/7-zip_portable
@@ -14,16 +15,16 @@ Folder paths below are arbitrary, but if you use the defaults, it will mean the 
 
 ### Git (portable edition)
 - Browse to https://git-scm.com/download/win
-- Download, and run **PortableGit-2.8.0-32-bit.7z.exe**, which will extract into a folder. Accept the default (````C:\Users\<username>\Downloads\PortableGit````).
+- Download, and run **PortableGit-2.8.0-32-bit.7z.exe** or **PortableGit-2.8.0-64-bit.7z.exe**, which will extract into a folder. Accept the default (````C:\Users\<username>\Downloads\PortableGit````).
 
 ### The Java Development Kit 8 (JDK)
 - This one is a bit involved, as we're going to take a normal JDK download, and create a portable version out of it.
 - Browse to http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 - Click **Accept License Agreement**
-- Download the Java SE Development Kit 8u77 for your operating system - probably **jdk-8u77-windows-i586.exe** or **jdk-8u77-windows-x64.exe**, depending on whether you're running 32 or 64 bit Windows.
-- Don't run this file!
-- Open 7-Zip portable, and navigate to the ````jdk-8u77-windows-xxxxx.exe```` download. **Right click** and choose **7-zip->Open Archive**.
-- A new archive will appear, called ````tools.zip````. Right click and choose **Open**.
+- Download the Java SE Development Kit 8u77 for your operating system - probably **jdk-8u77-windows-i586.exe** or **jdk-8u77-windows-x64.exe**.
+- ***Don't run this file!***
+- Open 7-Zip portable, and navigate to the ````jdk-8u77-windows-xxxxx.exe```` download. **Right click** and choose **7-zip->Open archive**.
+- A new archive will appear, containing the file ````tools.zip````. Right click that file and choose **Open**.
 - A new archive will appear, containing a number of directories and files. Press **Ctrl-A** to select all, and then click the Blue Extract tool. Specify ````c:\Users\<username>\Downloads\jdk````.
 - We need to unpack some of the files using the command prompt.
   - Navigate to this new ````Downloads\jdk```` folder in Windows Explorer, and **Shift-Right click**, and select **Open command window here**.
@@ -51,6 +52,7 @@ javac 1.8.0_77
 
 ### Minecraftforge
 - Browse to http://files.minecraftforge.net/ and download the **Recommended MDK** file.
+- **WARNING** There are annoying adverts on this download site - don't download anything other than the forge-xxxxx-mdk.zip file - look for a **SKIP** button, and ignore any adverts.
 - Unzip the downloaded ````forge-1.8.9-11.15.1.1722-mdk.zip```` file to ````C:\Users\<username>\Downloads\forge````.
 - In Windows Explorer, navigate to the new ````Downloads\forge```` directory, and again, hold down **Shift**, and **right click**, then select "Open command window here".
 - Type the following:
@@ -63,6 +65,9 @@ javac 1.8.0_77
 ### Start Eclipse
 - Browse to **EclipsePortable** folder, and start **EclipsePortable.exe**.
 - When asked to choose a workspace, browse to eclipse folder in MDK download folder, e.g. ````C:\Users\<username>\Downloads\forge\eclipse````
+- If not prompted to choose a workspace, go to **File->Switch Workspace... -> Other**.
+- Select the MDKExample folder in the left hand pane.
+- Click the Green Run button, or press **Ctrl-F11**.
 
 ## Sources
 - Tutorial video: https://www.youtube.com/watch?v=VhOSL7rGb10
