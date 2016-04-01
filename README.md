@@ -27,12 +27,43 @@ Folder paths below are arbitrary, but if you use the defaults, it will mean the 
 - A new archive will appear, containing a number of directories and files. Press **Ctrl-A** to select all, and then click the Blue Extract tool. Specify ````c:\Users\<username>\Downloads\jdk````.
 - We need to unpack some of the files using the command prompt.
   - Navigate to this new ````Downloads\jdk```` folder in Windows Explorer, and **Shift-Right click**, and select **Open command window here**.
-  - In the command prompt, type the following three lines and press <Enter> after each one.
-    - ````cd <jdk folder>````
+  - In the command prompt, type the following lines and press <Enter> after each one.
     - ````for /r %x in (*.pack) do .\bin\unpack200 -r "%x" "%~dx%~px%~nx.jar````
-    - ````bin/javac -version````
+    - ````bin\javac -version````
   - You should see something like the following:
-````
 
 ````
+C:\Users\coderdojo\Downloads\jdk>for /r %x in (*.pack) do .\bin\unpack200 -r "%x" "%~dx%~px%~nx.jar
+
+C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\charsets.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\charsets.jar
+
+C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\deploy.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\deploy.jar
+
+C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\javaws.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\javaws.jar
+
+C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\jsse.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\jsse.jar
+
+C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\plugin.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\plugin.jar
+
+C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\rt.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\rt.jar
+
+C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\ext\jfxrt.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\ext\jfxrt.jar
+
+C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\jre\lib\ext\localedata.pack" "C:\Users\coderdojo\Downloads\jdk\jre\lib\ext\localedata.jar
+
+C:\Users\coderdojo\Downloads\jdk>.\bin\unpack200 -r "C:\Users\coderdojo\Downloads\jdk\lib\tools.pack" "C:\Users\coderdojo\Downloads\jdk\lib\tools.jar
+
+C:\Users\coderdojo\Downloads\jdk>bin\javac -version
+javac 1.8.0_77
+
+````
+
 ### Mine
+
+## Troubleshooting
+### Unpacking issues
+If you see the following issue whilst unpacking the jdk, check the version of the jdk you downloaded matches your operating system.
+
+````
+This version of C:\Users\coderdojo\Downloads\jdk\jre\bin\unpack200.exe is not compatible with the version of Windows you're running. Check your computer's system information and then contact the software publisher.
+````
