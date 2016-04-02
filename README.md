@@ -8,6 +8,9 @@ We're using *portable versions* of the Java Development Kit and Eclipse so that 
 Folder paths below are arbitrary, but if you use the defaults, it will mean the steps are easier to follow.
 
 Some of the downloads below depend on whether you're running 32 or 64 bit Windows - to find out which you're using, go to http://windows.microsoft.com/en-NZ/windows7/find-out-32-or-64-bit.
+
+# Setting up our Development Environment
+
 ## What do we need to download?
 
 *A copy of all the downloaded files can also be downloaded at https://mega.nz/#F!7h8jGKyQ!mhnwCgWJjzuY-bvKGCng0Q.*
@@ -72,10 +75,12 @@ javac 1.8.0_77
 - Select the MDKExample folder in the left hand pane.
 - Click the Green Run button, or press **Ctrl-F11**.
 
+# Let's start MODDING (well almost)
 ### WOW - you've got further than we have!
-- You're ready to start creating a mod - but we haven't got that far here yet - heck back in coming weeks for updates, or send us a pull request with some notes yourself!
+- You're ready to start creating a mod - but we haven't got that far here yet - check back in coming weeks for updates, or send us a pull request with some notes yourself!
 - In the meantime, here are some additional resources for the next steps:
-  - https://www.youtube.com/user/wuppygaming/videos
+  - [Wuppy's modding tutorials on YouTube](https://www.youtube.com/user/wuppygaming/videos)
+  - [MinecraftForge's Basic Modding tutorial](http://www.minecraftforge.net/wiki/Basic_Modding)
 
 ## Sources
 - Tutorial video: https://www.youtube.com/watch?v=VhOSL7rGb10
