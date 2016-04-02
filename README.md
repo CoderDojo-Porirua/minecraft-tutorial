@@ -72,6 +72,11 @@ javac 1.8.0_77
 - Select the MDKExample folder in the left hand pane.
 - Click the Green Run button, or press **Ctrl-F11**.
 
+### WOW - you've got further than we have!
+- You're ready to start creating a mod - but we haven't got that far here yet - heck back in coming weeks for updates, or send us a pull request with some notes yourself!
+- In the meantime, here are some additional resources for the next steps:
+  - https://www.youtube.com/user/wuppygaming/videos
+
 ## Sources
 - Tutorial video: https://www.youtube.com/watch?v=VhOSL7rGb10
 - http://www.minecraftforge.net/wiki/Installation/Source
