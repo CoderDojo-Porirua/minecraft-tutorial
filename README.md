@@ -9,6 +9,9 @@ Folder paths below are arbitrary, but if you use the defaults, it will mean the 
 
 Some of the downloads below depend on whether you're running 32 or 64 bit Windows - to find out which you're using, go to http://windows.microsoft.com/en-NZ/windows7/find-out-32-or-64-bit. For Windows 10, go to http://www.tenforums.com/tutorials/4399-system-type-32-bit-x86-64-bit-x64-windows-10-a.html.
 
+- 32 bit is usually be listed as 32 bit, x86, or i586.
+- 64 bit will usually be listed as x64.
+
 # Setting up our Development Environment
 
 ## What do we need to download?
