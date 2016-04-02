@@ -33,7 +33,7 @@ Some of the downloads below depend on whether you're running 32 or 64 bit Window
 - Click **Accept License Agreement**
 - Download the Java SE Development Kit 8u77 for your operating system - probably **jdk-8u77-windows-i586.exe** or **jdk-8u77-windows-x64.exe**. (Don't download the demo and sample files.) 
 - ***Don't run this file!***
-- Open 7-Zip portable from your previously extracted 7-Zip Portable directory, and navigate to the ````jdk-8u77-windows-xxxxx.exe```` download. **Right click** and choose **7-zip->Open archive**.
+- Open **7-Zip portable.exe** from your previously extracted 7-Zip Portable directory, and navigate to the ````jdk-8u77-windows-xxxxx.exe```` download. **Right click** and choose **7-zip->Open archive**.
 - A new archive will appear, containing the file ````tools.zip````. Right click that file and choose **Open**.
 - A new archive will appear, containing a number of directories and files. Press **Ctrl-A** to select all, and then click the Blue Extract tool. Specify ````c:\Users\<username>\Downloads\jdk````.
 - We need to unpack some of the files using the command prompt.
