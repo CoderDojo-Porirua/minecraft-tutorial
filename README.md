@@ -7,7 +7,7 @@ We're using *portable versions* of the Java Development Kit and Eclipse so that 
 
 Folder paths below are arbitrary, but if you use the defaults, it will mean the steps are easier to follow.
 
-Some of the downloads below depend on whether you're running 32 or 64 bit Windows - to find out which you're using, go to http://windows.microsoft.com/en-NZ/windows7/find-out-32-or-64-bit.
+Some of the downloads below depend on whether you're running 32 or 64 bit Windows - to find out which you're using, go to http://windows.microsoft.com/en-NZ/windows7/find-out-32-or-64-bit. For Windows 10, go to http://www.tenforums.com/tutorials/4399-system-type-32-bit-x86-64-bit-x64-windows-10-a.html.
 
 # Setting up our Development Environment
 
@@ -17,6 +17,7 @@ Some of the downloads below depend on whether you're running 32 or 64 bit Window
 
 ### 7-Zip (portable edition)
 - Browse to http://portableapps.com/apps/utilities/7-zip_portable
+- *Make sure you don't download anything other than* ***Download Now sourceforge*** *link.*
 - Download, and run **7-ZipPortable_15.14.paf.exe**, which will extract into a folder. Accept the default (````C:\Users\<username>\Downloads\7-ZipPortable````)
 
 ### Git (portable edition)
