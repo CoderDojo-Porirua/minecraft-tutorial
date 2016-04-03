@@ -5,6 +5,10 @@ We're going to try and set up a development environment on a locked down Windows
 
 We're using *portable versions* of the Java Development Kit and Eclipse so that we can work on machines without needing administrative access, or installing anything on to the computer, for example in a school environment.
 
+- The *Java Development Kit* is the *software development kit* we're going to use to build our mods.
+- *Eclipse* is an *integrated development environment* we're going to use - this helps us build and debug the software.
+- MinecraftForge is a set of libraries and package we use to build the mods for Minecraft, using Eclipse and the JDK.
+
 Folder paths below are arbitrary, but if you use the defaults, it will mean the steps are easier to follow.
 
 Some of the downloads below depend on whether you're running 32 or 64 bit Windows - to find out which you're using, go to http://windows.microsoft.com/en-NZ/windows7/find-out-32-or-64-bit. For Windows 10, go to http://www.tenforums.com/tutorials/4399-system-type-32-bit-x86-64-bit-x64-windows-10-a.html.
@@ -153,6 +157,8 @@ C:\Users\Administrator\Desktop\Minecraft>
 
 ### Java heap space issue
 
+#### What happened?
+
 ````
 Applying SpecialSource...
 Applying Exceptor...
@@ -171,6 +177,14 @@ BUILD FAILED
 
 Total time: 3 mins 53.98 secs
 ````
+#### What caused it?
+
+Java ran out of memory trying to perform the gradlew task.
+
+#### How to fix
+
+Give Java more memory! :-)
+
 - Add ````org.gradle.jvmargs=-Xmx2G```` to **c:\users\<Username>\.gradle\gradle.properties** (create the file if it doesn't exist) to allocate more RAM to Gradle.
   - Alternatives if not enough memory:
   - ````org.gradle.jvmargs=-Xmx1500M````
