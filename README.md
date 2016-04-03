@@ -183,7 +183,7 @@ Java ran out of memory trying to perform the gradlew task.
 
 #### How do we fix it?
 Give Java more memory! :-)
-- Add the following line to **%USERNAME%\.gradle\gradle.properties** (create the file if it doesn't exist) to allocate more RAM to Gradle. Here we're giving it 2GB.
+- Add the following line to **%USERNAME%\\.gradle\\gradle.properties** (create the file if it doesn't exist) to allocate more RAM to Gradle. Here we're giving it 2GB.
   - ````org.gradle.jvmargs=-Xmx2G````
   - If you get an error about running out of memory, try one of these options - 1.5GB or 1GB:
   - ````org.gradle.jvmargs=-Xmx1500M````
