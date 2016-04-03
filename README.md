@@ -16,6 +16,8 @@ Some of the downloads below depend on whether you're running 32 or 64 bit Window
 - 32 bit is usually be listed as 32 bit, x86, or i586.
 - 64 bit will usually be listed as x64.
 
+When you see ````%USERPROFILE%\```` below this actually means your home directory, e.g. ````c:\users\coderdojo\````. If you type it into Windows Explorer, it will automaticaly be changed to your own home directory.
+
 # Setting up our Development Environment
 
 ## What do we need to download?
@@ -25,11 +27,11 @@ Some of the downloads below depend on whether you're running 32 or 64 bit Window
 ### 7-Zip (portable edition)
 - Browse to http://portableapps.com/apps/utilities/7-zip_portable
 - *Make sure you don't download anything other than* ***Download Now sourceforge*** *link.*
-- Download, and run **7-ZipPortable_15.14.paf.exe**, which will extract into a folder. Accept the default (````C:\Users\<username>\Downloads\7-ZipPortable````)
+- Download, and run **7-ZipPortable_15.14.paf.exe**, which will extract into a folder. Accept the default (````%USERPROFILE%\Downloads\7-ZipPortable````)
 
 ### Git (portable edition)
 - Browse to https://git-scm.com/download/win
-- Download, and run **PortableGit-2.8.0-32-bit.7z.exe** or **PortableGit-2.8.0-64-bit.7z.exe**, which will extract into a folder. Accept the default (````C:\Users\<username>\Downloads\PortableGit````).
+- Download, and run **PortableGit-2.8.0-32-bit.7z.exe** or **PortableGit-2.8.0-64-bit.7z.exe**, which will extract into a folder. Accept the default (````%USERNAME%\Downloads\PortableGit````).
 
 ### The Java Development Kit 8 (JDK)
 - This one is a bit involved, as we're going to take a normal JDK download, and create a portable version out of it.
@@ -39,7 +41,7 @@ Some of the downloads below depend on whether you're running 32 or 64 bit Window
 - ***Don't run this file!***
 - Open **7-Zip portable.exe** from your previously extracted 7-Zip Portable directory, and navigate to the ````jdk-8u77-windows-xxxxx.exe```` download. **Right click** and choose **7-zip->Open archive**.
 - A new archive will appear, containing the file ````tools.zip````. Right click that file and choose **Open**.
-- A new archive will appear, containing a number of directories and files. Press **Ctrl-A** to select all, and then click the Blue Extract tool. Specify ````c:\Users\<username>\Downloads\jdk````.
+- A new archive will appear, containing a number of directories and files. Press **Ctrl-A** to select all, and then click the Blue Extract tool. Specify ````%USERNAME%\Downloads\jdk````.
 - We need to unpack some of the files using the command prompt.
   - Navigate to this new ````Downloads\jdk```` folder in Windows Explorer, and **Shift-Right click**, and select **Open command window here**.
   - In the command prompt, type the following lines and press <Enter> after each one.
@@ -61,13 +63,13 @@ javac 1.8.0_77
 
 ### Eclipse Classic Version 4.4 Portable Edition
 - Browse to https://sourceforge.net/projects/eclipseportable/ and Download **EclipsePortable_4.4_Classic_Edition.paf.exe**
-- Run the file, and extract into a folder. Accept the default (````C:\Users\<username>\Downloads\EclipsePortable````)
+- Run the file, and extract into a folder. Accept the default (````%USERNAME%\Downloads\EclipsePortable````)
 - Copy all files and folders from the **Downloads\jdk** folder to the **Downloads\EclipsePortable\App\Java**
 
 ### Minecraftforge
 - Browse to http://files.minecraftforge.net/ and download the **Recommended MDK** file.
 - **WARNING** There are annoying adverts on this download site - don't download anything other than the forge-xxxxx-mdk.zip file - look for a **SKIP** button, and ignore any adverts.
-- Unzip the downloaded ````forge-1.8.9-11.15.1.1722-mdk.zip```` file to ````C:\Users\<username>\Downloads\forge````.
+- Unzip the downloaded ````forge-1.8.9-11.15.1.1722-mdk.zip```` file to ````%USERNAME%\Downloads\forge````.
 - In Windows Explorer, navigate to the new ````Downloads\forge```` directory, and again, hold down **Shift**, and **right click**, then select "Open command window here".
 - Type the following:
   - ````PATH="%PATH%";"%USERPROFILE%\Downloads\EclipsePortable\App\Java\bin"````
@@ -78,7 +80,7 @@ javac 1.8.0_77
 
 ### Start Eclipse
 - Browse to **EclipsePortable** folder, and start **EclipsePortable.exe**.
-- When asked to choose a workspace, browse to eclipse folder in MDK download folder, e.g. ````C:\Users\<username>\Downloads\forge\eclipse````
+- When asked to choose a workspace, browse to eclipse folder in MDK download folder, e.g. ````%USERNAME%\Downloads\forge\eclipse````
 - If not prompted to choose a workspace, go to **File->Switch Workspace... -> Other**.
 - Select the MDKExample folder in the left hand pane.
 - Click the Green Run button, or press **Ctrl-F11**.
@@ -156,7 +158,6 @@ C:\Users\Administrator\Desktop\Minecraft>
 
 
 ### Java heap space issue
-
 #### What happened?
 
 ````
@@ -178,16 +179,15 @@ BUILD FAILED
 Total time: 3 mins 53.98 secs
 ````
 #### What caused it?
-
 Java ran out of memory trying to perform the gradlew task.
 
-#### How to fix
-
+#### How do we fix it?
 Give Java more memory! :-)
-
-- Add ````org.gradle.jvmargs=-Xmx2G```` to **c:\users\<Username>\.gradle\gradle.properties** (create the file if it doesn't exist) to allocate more RAM to Gradle.
-  - Alternatives if not enough memory:
+- Add the following line to **%USERNAME%\.gradle\gradle.properties** (create the file if it doesn't exist) to allocate more RAM to Gradle. Here we're giving it 2GB.
+  - ````org.gradle.jvmargs=-Xmx2G````
+  - If you get an error about running out of memory, try one of these options - 1.5GB or 1GB:
   - ````org.gradle.jvmargs=-Xmx1500M````
+  - ````org.gradle.jvmargs=-Xmx1000M````
 
 ### Eclipse run/debug error
 
@@ -195,4 +195,5 @@ Give Java more memory! :-)
 Launching Client has encountered a problem.
 Variable references empty selection: ${project_loc}
 ````
-- Make sure you’ve got the project selected in the Package Explorer pane on the left.
+#### How do we fix it?
+- Make sure you’ve got the project selected in the Package Explorer pane on the left. (Eclipse is stupid sometimes.)
