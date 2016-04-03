@@ -1,11 +1,18 @@
 
-We're going to try and set up a development environment on a locked down Windows machine. This tutorial has been tested on Windows 10, but should work on earlier versions too.
+# Development Environment Setup
 
-We're using *portable versions* of the Java Development Kit and Eclipse so that we can work on machines without needing administrative access, or installing anything on to the computer, for example in a school environment.
+A development environment is a set of tools we use to develop and debug software. We could do much of this without one, but a development environment will make these tasks easier.
 
-- The *Java Development Kit* is the *software development kit* we're going to use to build our mods.
-- *Eclipse* is an *integrated development environment* we're going to use - this helps us build and debug the software.
+- The *Java Development Kit* is the *software development kit* we're going to use to build our mods. It give us a bunch of tools to develop using *Java*, the language Minecraft is programmed in.
+- *Eclipse* is the  *integrated development environment* we're going to use to helps us build and debug the software.
 - MinecraftForge is a set of libraries and package we use to build the mods for Minecraft, using Eclipse and the JDK.
+
+We're going to try and set up a development environment on a locked down Windows machine - that's a machine running Windows, for which we don't have administrative access (like your school's computers). We're using *portable versions* of the Java Development Kit and Eclipse so that we can work on machines without needing to install anything on to the computer. If you have your own Windows computer, you can still follow this tutorial and it will work.
+
+If you have a Linux or Mac computer, the steps are slightly different, and are (or will be) listed (here)[dev-environment-setup-linux-mac.md]
+
+. This tutorial has been tested on Windows 10, but should work on earlier versions too.
+
 
 Folder paths below are arbitrary, but if you use the defaults, it will mean the steps are easier to follow.
 
@@ -82,3 +89,6 @@ javac 1.8.0_77
 - If not prompted to choose a workspace, go to **File->Switch Workspace... -> Other**.
 - Select the MDKExample folder in the left hand pane.
 - Click the Green Run button, or press **Ctrl-F11**.
+
+### Let's start Modding!
+- Now go to [our first example mod](example1-mod.md).
