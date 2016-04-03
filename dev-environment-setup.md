@@ -9,14 +9,14 @@ A development environment is a set of tools we use to develop and debug software
 
 We're going to try and set up a development environment on a locked down Windows machine - that's a machine running Windows, for which we don't have administrative access (like your school's computers). We're using *portable versions* of the Java Development Kit and Eclipse so that we can work on machines without needing to install anything on to the computer. If you have your own Windows computer, you can still follow this tutorial and it will work.
 
-If you have a Linux or Mac computer, the steps are slightly different, and are (or will be) listed (here)[dev-environment-setup-linux-mac.md]
+If you have a Linux or Mac computer, the steps are slightly different, and are (or will be) listed [here](dev-environment-setup-linux-mac.md).
 
 . This tutorial has been tested on Windows 10, but should work on earlier versions too.
 
 
 Folder paths below are arbitrary, but if you use the defaults, it will mean the steps are easier to follow.
 
-Some of the downloads below depend on whether you're running 32 or 64 bit Windows - to find out which you're using, go to http://windows.microsoft.com/en-NZ/windows7/find-out-32-or-64-bit. For Windows 10, go to http://www.tenforums.com/tutorials/4399-system-type-32-bit-x86-64-bit-x64-windows-10-a.html.
+Some of the downloads below depend on whether you're running 32 or 64 bit Windows - to find out which you're using, go to these links for [Windows Xp/7](http://windows.microsoft.com/en-NZ/windows7/find-out-32-or-64-bit), and [Windows 10](, go to )http://www.tenforums.com/tutorials/4399-system-type-32-bit-x86-64-bit-x64-windows-10-a.html).
 
 - 32 bit is usually be listed as 32 bit, x86, or i586.
 - 64 bit will usually be listed as x64.
