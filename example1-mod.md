@@ -30,12 +30,12 @@
     - Note the American spelling of *initialize* - this is common in a lot of programming (even *program* is an American spelling!).
     - The ````(FMLPreInitializationEvent event)```` part is the argument list, so the function is called with an argument called ````event````, and that argument has a **type** of ````FMLPreInitializationEvent````.
     - Press ````[Ctrl-Shift-O]````, and this will add an ````import```` at the top of the class to let the code know what the type ````FMLPreInitializationEvent```` is.
-    - The code we've added should be as in this [changeset](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/02f5f6342229f3d38f7448eb934a0dcc7024d8d9).
+    - The code we've added should be as in this - (click on the octocat [:octocat:](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/02f5f6342229f3d38f7448eb934a0dcc7024d8d9)).
   - For the second and third, copy the previous code block you added, but change the function name and argument type as follows:
     - ````init````,  ````FMLInitializationEvent````
     - ````postInit````,  ````FMLPostInitializationEvent````
     - Press ````[Ctrl-Shift-O]```` again to add the ````import```` statements at the top of the class.
-    - You should end up with the following ([changeset](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/6b1422dbc84a115171ab41303ba6c3a5e7b5e39f)):
+    - You should end up with the following ([:octocat:](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/6b1422dbc84a115171ab41303ba6c3a5e7b5e39f)):
     ````
 package nz.cdr.minecrafttutorial;
 
@@ -58,6 +58,6 @@ public class TutorialMod {
   	}
 }
     ````
-    - Add ````@EventHandler```` *annotation* above each of the initialisation functions, and again ````[Ctrl-Shift-O]````  ([changeset](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/60b3d5eb8123afb6588943587be5e814acf1d749)).
+    - Add ````@EventHandler```` *annotation* above each of the initialisation functions, and again ````[Ctrl-Shift-O]````  ([:octocat:](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/60b3d5eb8123afb6588943587be5e814acf1d749)).
   - Add some information about our Mod:
     - Add a new class called ````Reference````([:octocat:](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/1b87051540d550194bc1ff3d62bd9a2548209f54)).
