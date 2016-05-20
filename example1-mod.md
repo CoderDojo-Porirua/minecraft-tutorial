@@ -44,19 +44,18 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class TutorialMod {
+  	public void preInit(FMLPreInitializationEvent event)
+  	{
 
-	public void preInit(FMLPreInitializationEvent event)
-	{
+  	}
+  	public void init(FMLInitializationEvent event)
+  	{
 
-	}
-	public void init(FMLInitializationEvent event)
-	{
+  	}
+  	public void postInit(FMLPostInitializationEvent event)
+  	{
 
-	}
-	public void postInit(FMLPostInitializationEvent event)
-	{
-
-	}
+  	}
 }
     ````
     - Add ````@EventHandler```` *annotation* above each of the initialisation functions, and again ````[Ctrl-Shift-O]````  ([changeset](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/60b3d5eb8123afb6588943587be5e814acf1d749)).
