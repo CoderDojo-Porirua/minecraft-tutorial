@@ -8,7 +8,8 @@ We're using *portable versions* of the Java Development Kit and Eclipse so that 
 ## Sections:
 
 1. [Development Environment Setup](dev-environment-setup.md)
-2. [Our first example Mod!](example1-mod.md)
+2. [Create our mod class](step1-mod-class.md)
+2. [Create custom items](step2-custom-tems.md)
 3. [Profit!]
 * [Troubleshooting](troubleshooting.md)
 
