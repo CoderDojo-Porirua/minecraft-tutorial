@@ -13,7 +13,8 @@ We're using *portable versions* of the Java Development Kit and Eclipse so that 
 * [Troubleshooting](troubleshooting.md)
 
 ## Sources
-- Tutorial video: https://www.youtube.com/watch?v=VhOSL7rGb10
+- Tutorial videos:
+  - https://www.youtube.com/watch?v=VhOSL7rGb10
 - http://www.minecraftforge.net/wiki/Installation/Source
 - http://mcforge.readthedocs.org/en/latest/gettingstarted/
 
