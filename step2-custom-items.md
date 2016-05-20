@@ -27,4 +27,4 @@
 - ```/give Player123 tm:test_item```
 - Item will appear as a purple and black block - we need to define some JSON files to tell Minecraft how the item should look!
 - We need to create a 16x16 pixel image, and add to ```src/main/resources``` folder.
-- Create a new ```assets``` folder, and within that another new folder named with your MOD_ID, e.g. ```tm```.
+- Create a new ```assets``` folder, and within that another new folder named with your MOD_ID, e.g. ```tm```. ([:octocat:](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/db296aafdc4a1280975aee58f669559e7d0c9ae1).
