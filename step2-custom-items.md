@@ -26,3 +26,6 @@
 - ```/give [tab] [our MOD_ID][tab]```
 - ```/give Player123 tm:test_item```
 - Item will appear as a purple and black block - we need to define some JSON files to tell Minecraft how the item should look!
+- We need to create a 16x16 pixel image, and add to ```src/main/resources``` folder.
+- Create a new ```assets``` folder, and within that another new folder named with your MOD_ID, e.g. ```tm```.
+- 
