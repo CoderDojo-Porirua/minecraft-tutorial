@@ -16,10 +16,13 @@
 - TO DESCRIBE:
 - TutorialItems class
 - Proxy package and classes
+- ([:octocat:](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/bd3abb5fd8a8cd6f10ed6d73de02117ca5e53461)
 - Describe ```extends``` and ```@Override```.
 - Client and Server proxies are to do different stuff on the client and the server.
 
 - If it comes up with an *Organize Imports* dialogue when you press ````[Ctrl-Shift-O]````, choose ````net.minecraft.item.item````.
 
-
 ## Run the mod
+- ```/give [tab] [our MOD_ID][tab]```
+- ```/give Player123 tm:test_item```
+- Item will appear as a purple and black block - we need to define some JSON files to tell Minecraft how the item should look!
