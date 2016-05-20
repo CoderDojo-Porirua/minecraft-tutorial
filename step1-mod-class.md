@@ -78,5 +78,5 @@ public class Reference {
 ## Run the mod
 - Click the *Mods* button in Minecraft - you should see one listed with the name we gave ours.
 
-### Let's start Modding!
-- Now go to step 1 and [create our mod class](step1-mod-class.md).
+### Custom Items
+- Now lets [create some custom items](step2-custom-tems.md).
