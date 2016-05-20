@@ -35,7 +35,7 @@
     - ````init````,  ````FMLInitializationEvent````
     - ````postInit````,  ````FMLPostInitializationEvent````
     - Press ````[Ctrl-Shift-O]```` again to add the ````import```` statements at the top of the class.
-    - You should end up with the following:
+    - You should end up with the following ([changeset](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/6b1422dbc84a115171ab41303ba6c3a5e7b5e39f)):
     ````
 package nz.cdr.minecrafttutorial;
 
@@ -58,6 +58,4 @@ public class TutorialMod {
 
 	}
 }
-
     ````
-    - https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/6b1422dbc84a115171ab41303ba6c3a5e7b5e39f
