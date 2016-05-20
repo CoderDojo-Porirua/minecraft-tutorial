@@ -61,3 +61,12 @@ public class TutorialMod {
     - Add ````@EventHandler```` *annotation* above each of the initialisation functions, and again ````[Ctrl-Shift-O]````  ([:octocat:](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/60b3d5eb8123afb6588943587be5e814acf1d749)).
   - Add some information about our Mod:
     - Add a new class called ````Reference````([:octocat:](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/1b87051540d550194bc1ff3d62bd9a2548209f54)).
+    ```java
+package nz.cdr.minecrafttutorial;
+
+public class Reference {
+	public static final String MOD_ID = "tm";
+	public static final String MOD_NAME = "Tutorial Mod";
+	public static final String VERSION = "1.0";
+}
+```
