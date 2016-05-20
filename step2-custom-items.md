@@ -16,7 +16,7 @@
 - TO DESCRIBE:
 - TutorialItems class
 - Proxy package and classes
-- ([:octocat:](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/bd3abb5fd8a8cd6f10ed6d73de02117ca5e53461)
+- ([:octocat:](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/bd3abb5fd8a8cd6f10ed6d73de02117ca5e53461))
 - Describe ```extends``` and ```@Override```.
 - Client and Server proxies are to do different stuff on the client and the server.
 
@@ -27,4 +27,4 @@
 - ```/give Player123 tm:test_item```
 - Item will appear as a purple and black block - we need to define some JSON files to tell Minecraft how the item should look!
 - We need to create a 16x16 pixel image, and add to ```src/main/resources``` folder.
-- Create a new ```assets``` folder, and within that another new folder named with your MOD_ID, e.g. ```tm```. ([:octocat:](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/db296aafdc4a1280975aee58f669559e7d0c9ae1).
+- Create a new ```assets``` folder, and within that another new folder named with your MOD_ID, e.g. ```tm```. ([:octocat:](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/db296aafdc4a1280975aee58f669559e7d0c9ae1)).
