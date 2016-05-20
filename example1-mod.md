@@ -16,3 +16,48 @@
   - ````src/main/java/nz.cdr.minecrafttutorial```` - Right Click and New -> Class.
     - Give it the name ````TutorialMod````.
     - Click **Finish**.
+- Add initialisation functions
+  - There are three initialisation events we need to handle:
+    - For the first, type the following inside the class:
+    ````
+        public void preInit(FMLPreInitializationEvent event)
+        {
+
+        }
+    ````
+    - ````public```` means that this function can be accessed by other parts of the program.
+    - ````void```` means that it doesn't return anything when it has finished. Functions can return a value after they've executed, or return no value.
+    - Note the American spelling of *initialize* - this is common in a lot of programming (even *program* is an American spelling!).
+    - The ````(FMLPreInitializationEvent event)```` part is the argument list, so the function is called with an argument called ````event````, and that argument has a **type** of ````FMLPreInitializationEvent````.
+    - Press ````[Ctrl-Shift-O]````, and this will add an ````import```` at the top of the class to let the code know what the type ````FMLPreInitializationEvent```` is.
+    - The code we've added should be as in this [changeset](https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/02f5f6342229f3d38f7448eb934a0dcc7024d8d9).
+  - For the second and third, copy the previous code block you added, but change the function name and argument type as follows:
+    - ````init````,  ````FMLInitializationEvent````
+    - ````postInit````,  ````FMLPostInitializationEvent````
+    - Press ````[Ctrl-Shift-O]```` again to add the ````import```` statements at the top of the class.
+    - You should end up with the following:
+    ````
+package nz.cdr.minecrafttutorial;
+
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+
+public class TutorialMod {
+
+	public void preInit(FMLPreInitializationEvent event)
+	{
+
+	}
+	public void init(FMLInitializationEvent event)
+	{
+
+	}
+	public void postInit(FMLPostInitializationEvent event)
+	{
+
+	}
+}
+
+    ````
+    - https://github.com/CoderDojo-Porirua/minecraft-forge-1.8/commit/6b1422dbc84a115171ab41303ba6c3a5e7b5e39f
