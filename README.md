@@ -16,3 +16,6 @@ We're using *portable versions* of the Java Development Kit and Eclipse so that 
 - Tutorial video: https://www.youtube.com/watch?v=VhOSL7rGb10
 - http://www.minecraftforge.net/wiki/Installation/Source
 - http://mcforge.readthedocs.org/en/latest/gettingstarted/
+
+## Other tutorials
+- [Minecraft Forge Installation Tutorials (User rather than dev focused)](https://www.youtube.com/playlist?list=PLnpPguhVZMItSgWX8g8NFTq_rYrElxZ96)

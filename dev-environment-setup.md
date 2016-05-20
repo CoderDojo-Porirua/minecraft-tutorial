@@ -3,6 +3,8 @@
 
 A development environment is a set of tools we use to develop and debug software. We could do much of this without one, but a development environment will make these tasks easier.
 
+Largely inspired by [MrCrayfish's](https://twitter.com/MrCraayfish) great [tutorial video](https://www.youtube.com/watch?v=VhOSL7rGb10)
+
 - The *Java Development Kit* is the *software development kit* we're going to use to build our mods. It give us a bunch of tools to develop using *Java*, the language Minecraft is programmed in.
 - *Eclipse* is the  *integrated development environment* we're going to use to helps us build and debug the software.
 - MinecraftForge is a set of libraries and package we use to build the mods for Minecraft, using Eclipse and the JDK.
@@ -71,8 +73,9 @@ javac 1.8.0_77
 - Run the file, and extract into a folder. Accept the default (````%USERNAME%\Downloads\EclipsePortable````)
 - Copy all files and folders from the **Downloads\jdk** folder to the **Downloads\EclipsePortable\App\Java**
 
-### Minecraftforge
-- Browse to http://files.minecraftforge.net/ and download the **Recommended MDK** file.
+### Minecraftforge (version 1.8)
+- We're using version 1.8 of Minecraft Forge as there are more examples, tutorials and samples available to us.
+- Browse to http://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.8.9.html and download the **Recommended MDK** file.
 - **WARNING** There are annoying adverts on this download site - don't download anything other than the forge-xxxxx-mdk.zip file - look for a **SKIP** button, and ignore any adverts.
 - Unzip the downloaded ````forge-1.8.9-11.15.1.1722-mdk.zip```` file to ````%USERNAME%\Downloads\forge````.
 - In Windows Explorer, navigate to the new ````Downloads\forge```` directory, and again, hold down **Shift**, and **right click**, then select "Open command window here".
