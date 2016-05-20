@@ -94,4 +94,4 @@ javac 1.8.0_77
 - Click the Green Run button, or press **Ctrl-F11**.
 
 ### Let's start Modding!
-- Now go to [our first example mod](example1-mod.md).
+- Now go to step 1 and [create our mod class](example1-mod.md).

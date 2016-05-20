@@ -1,7 +1,7 @@
 # Let's start MODDING
 - You're ready to start creating a mod - we're going to follow [MrCrayfish's](https://twitter.com/MrCraayfish) Minecraft 1.8 Modding tutorial - [Episode 2 - Mod Class](https://www.youtube.com/watch?v=S8Oy2Z5V2VU&index=2&list=PLy11IosblXIFDFAT3wz_5Nve05wIVKFSJ).
 
-- We should have already [setup out development environment](dev-environment-setup.md).
+- We should have already [set up our development environment](dev-environment-setup.md).
 
 - Delete the example mod
   - ````src/main/java/```` - ````com.example.examplemod```` - Right Click and delete.
@@ -74,3 +74,9 @@ public class Reference {
     ```java
     @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION);
     ```
+
+## Run the mod
+- Click the *Mods* button in Minecraft - you should see one listed with the name we gave ours.
+
+### Let's start Modding!
+- Now go to step 1 and [create our mod class](step1-mod-class.md).
