@@ -29,7 +29,7 @@ When you see ````%USERPROFILE%\```` below this actually means your home director
 
 ## What do we need to download?
 
-*A copy of all the downloaded files can also be downloaded at https://mega.nz/#F!7h8jGKyQ!mhnwCgWJjzuY-bvKGCng0Q.*
+*A copy of all the downloaded files can also be downloaded at https://mega.nz/#F!7h8jGKyQ!mhnwCgWJjzuY-bvKGCng0Q, and https://mega.nz/#!2dZU0QLJ!1hPDhK5tI4TEjR1b0SPbI-4dNVi1GWAH75D3Us2de6k for the prebuilt environment.*
 
 ### 7-Zip (portable edition)
 - Browse to http://portableapps.com/apps/utilities/7-zip_portable
